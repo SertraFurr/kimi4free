@@ -79,7 +79,7 @@ Send a message and create a new chat session.
 **Parameters:**
 - 📝 `message` (str): Your message
 - 🌊 `stream` (bool): Stream output to console (default: `False`)
-- 🤖 `model` (str): AI model to use (default: `"k2"`)
+- 🤖 `model` (str): AI model to use (default: `"k2"` other: `k1.5`)
 - 🔍 `use_search` (bool): Enable web search (default: `True`)
 - 🔬 `use_deep_research` (bool): Enable deep research (default: `True`)
 - 🧠 `use_semantic_memory` (bool): Use semantic memory (default: `False`)
