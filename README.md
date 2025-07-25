@@ -68,13 +68,16 @@ response = client.chat("Hi there", model="k2")
 
 ## 📚 API Reference
 
-### 🏗️ `KimiClient()`
-
+### 🏗️ `KimiClient(debug=False)`
 Creates a new Kimi API client instance.
 
-### 💬 `client.chat(message, **kwargs)`
++ **Parameters:**
++ - 🐞 `debug` (bool): Enable debug output to see internal steps and responses.
 
-Send a message and create a new chat session.
+### 💬 `client.chat(message, stream=False, chat_id=None, **kwargs)`
+- chat_id only if you want to continue a conversation.
+
+Send a message and automatically create a new chat session if none is provided.
 
 **Parameters:**
 - 📝 `message` (str): Your message
@@ -91,6 +94,7 @@ Send a message and create a new chat session.
 Create a new chat session.
 
 **Returns:** 🆔 Chat ID string
+
 
 ### 📨 `client.send_message(chat_id, message, **kwargs)`
 
@@ -112,7 +116,7 @@ Send a message to an existing chat session.
 
 ## 🤝 Contributing
 
-We welcome contributions! We are still missing upload functionnality, feel free to pull request !
+We welcome contributions! We are still missing upload functionality, feel free to pull request !
 
 ## 📄 License
 
